@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+    <h1>Team Entry Form</h1>
+    <form id="team-value" action="/">
+        <label>Select your team</label>
+        <br>
+        <select id="team-name" name="selectPicker">
+            <option value="">Please select the team that you play for</option>
+            <option value="Chief">Chiefs</option>
+            <option value="Raven">Ravens</option>
+            <option value="Raider">Raiders</option>
+            <option value="Lion">Lions</option>
+        </select>
+        <div class="spacer"></div>
+        <button type="submit">Submit</button>
+    </form>
+    <header>
+        <h1>Conference Championship Stadium</h1>
+        <p>
+            Welcome to the luxurious Conference Championship Stadium. The crowd is dying to see you play. Please make your way to your team's locker room. Good luck tonight! Oh, and be sure you pick the right locker room. Wouldn't want to get the other team riled up before the big game...
+        </p>
+        <p>
+            Click on your team' locker room below.
+        </p>
+    </header>
+    <div class="bluePrint">
+        <table>
+            <tr>
+                <td class="chiefs">Chief's Locker Room</td>
+                <td class="ravens">Raven's Locker Room</td>
+            </tr>
+            <tr>
+                <td class="raiders">Raider's Locker Room</td>
+                <td class="lions">Lion's Locker Room</td>
+            </tr>
+        </table>
+    </div>
+    <script src="main-submission.js"></script>
+</body>
+</html>

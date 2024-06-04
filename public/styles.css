@@ -1,0 +1,42 @@
+header {
+    width: 80vw;
+}
+
+.spacer {
+    height: 15px;
+}
+
+table {
+    margin-top: 30px;
+    border: 1px solid black;
+    width: 80vw;
+}
+
+td {
+    padding: 50px;
+}
+
+.chiefs {
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+.ravens {
+    background-color: purple;
+    color: white;
+    text-align: center;
+}
+
+.raiders {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+
+.lions {
+    background-color: rgb(49, 204, 255);
+    color: white;
+    text-align: center;
+}
