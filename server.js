@@ -24,11 +24,11 @@ nunjucks.configure('views', {
 })
 
 app.get('/', (req, res) => {
-    res.render('form.html')
+    res.render('form.html.njk')
 })
 
-app.get('/stadium', (req, res) => {
-    res.render('stadium.html')
+app.get('/base', (req, res) => {
+    res.render('base.html.njk')
 })
 
 app.listen(port, () => {
