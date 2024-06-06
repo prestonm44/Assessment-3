@@ -40,3 +40,10 @@ td {
     color: white;
     text-align: center;
 }
+
+#apiText {
+    column-count: 4;
+    column-gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

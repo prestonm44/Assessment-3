@@ -6,7 +6,7 @@ axios.get('https://api.sportsdata.io/v3/nfl/scores/json/PlayersBasic/KC?key=53ac
     .then( (response) => {
         let playerList = " ";
         for (const player of response.data) {
-            playerList += `<br><li>${player.Name},  ${player.Number}, ${player.Position}, ${player.College} </li>`;
+            playerList += `<li>${player.Name},  ${player.Number}, ${player.Position}, ${player.College} </li>`;
         } 
         document.querySelector('#apiText').innerHTML =    
         playerList          
@@ -23,7 +23,7 @@ function getPlayerInfoRavens() {
             .then( (response) => {
                 let playerList = " ";
                 for (const player of response.data) {
-                    playerList += `<br><li>${player.Name},  ${player.Number}, ${player.Position}, ${player.College} </li>`;
+                    playerList += `<li>${player.Name},  ${player.Number}, ${player.Position}, ${player.College} </li>`;
                 } 
                 document.querySelector('#apiText').innerHTML =    
                 playerList          
@@ -40,7 +40,7 @@ function getPlayerInfoRaiders() {
         .then( (response) => {
             let playerList = " ";
             for (const player of response.data) {
-                playerList += `<br><li>${player.Name},  ${player.Number}, ${player.Position}, ${player.College} </li>`;
+                playerList += `<li>${player.Name},  ${player.Number}, ${player.Position}, ${player.College} </li>`;
             } 
             document.querySelector('#apiText').innerHTML =    
             playerList          
@@ -57,7 +57,7 @@ function getPlayerInfoLions() {
         .then( (response) => {
             let playerList = " ";
             for (const player of response.data) {
-                playerList += `<br><li>${player.Name},  ${player.Number}, ${player.Position}, ${player.College} </li>`;
+                playerList += `<li>${player.Name},  ${player.Number}, ${player.Position}, ${player.College} </li>`;
             } 
             document.querySelector('#apiText').innerHTML =    
             playerList          
