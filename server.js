@@ -37,12 +37,20 @@ app.listen(port, () => {
 
 app.get('/practice', (req, res) => {
     const teamSelection = req.query.selectPicker;
-    console.log('hit')
     response = res.send(`<a href='/stadium'>Welcome, ${teamSelection}!</a>`)
     console.log(response);
 })
 
+// app.post('/', (req,res) => {
+//     const sess = req.session;
+//     sess.value = req.body.value;
+//     res.render('form.html.njk')
+// })
 
-app.get('/practice', (req, res) => {
-    res.send('Hello!');
-  });
+// app.get('/', (req, res) => {
+//     if (req.session.value) {
+//         res.send(`<p>Hello ${req.session.value}!</p>`);
+//     } else {
+//         res.send(`<p>You're not welcome here<p>`)
+//     }
+// })
