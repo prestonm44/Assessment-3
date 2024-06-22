@@ -1,5 +1,11 @@
 //CHIEFS PLAYER DATA//
+import { getTeamValue, enteredTeam } from "./main-submission";
+
+getTeamValue()
+
 function getPlayerInfoChiefs() {
+    console.log(enteredTeam)
+    if (enteredTeam === 'Chief') {
         axios.get('https://api.sportsdata.io/v3/nfl/scores/json/PlayersBasic/KC?key=53ac94d7422e4a65b18e03b16aeb7418')
             .then( (response) => {
                 let playerList = " ";
@@ -8,8 +14,10 @@ function getPlayerInfoChiefs() {
                 } 
                 document.querySelector('#apiText').innerHTML = playerList          
             })
+        } else {
+            alert("Get out!")
         }
-        //deleted this section to try and get the other functionality to work    
+    }   
         const kcButton = document.querySelector('.chiefs');
             kcButton.addEventListener('click', getPlayerInfoChiefs);
     
@@ -19,7 +27,7 @@ function getPlayerInfoRavens() {
             .then( (response) => {
                 let playerList = " ";
                 for (const player of response.data) {
-                    playerList += `<li>${player.Name},  ${player.Number}, ${player.Position}, ${player.College} </li>`;
+                    playerList += `<li>${player.Name},  ${player.Number}, ${player.Position}, ${player.College}, ${player.Height} </li>`;
                 } 
                 document.querySelector('#apiText').innerHTML =    
                 playerList          
